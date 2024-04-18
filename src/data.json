@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "nama": "Muhammad Faruq",
+    "nim": "12250111791",
+    "judul": "Perancangan Rancangan yang Akan Dirancangkan, Dengan Menggunakan Metode Perancangan Terbaru dan yang Paling Sesuai Untuk Sebuah Perancangan",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "2",
+    "nama": "Ahmad Kurniawan",
+    "nim": "12250111791",
+    "judul": "Analisis Penggunaan Framework AditJS Pada Proyek Berskala Besar",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "3",
+    "nama": "Aufa Hajati",
+    "nim": "12250111791",
+    "judul": "Klasifikasi Pengklasifikasian yang Akan Diklasifikasikan",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "4",
+    "nama": "Hafidz Alhadid Rahman",
+    "nim": "12250111791",
+    "judul": "Penggunaan Algoritma K-Means dalam Menentukan Sebuah Ramalan",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "5",
+    "nama": "Muhammad Aditya Rinaldi",
+    "nim": "12250111791",
+    "judul": "Analisis Dampak Pengaruh Penggunaan Algoritma yang Tidak Digunakan",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "6",
+    "nama": "Fulan",
+    "nim": "12250111791",
+    "judul": "Penggunaan Algoritma K-Means dalam Menentukan Sebuah Ramalan",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "7",
+    "nama": "Fulanah",
+    "nim": "12250111791",
+    "judul": "Klasifikasi Pengklasifikasian yang Akan Diklasifikasikan",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "8",
+    "nama": "Sumbul HZ",
+    "nim": "12250111791",
+    "judul": "Analisis Penggunaan Framework AditJS Pada Proyek Berskala Besar",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  },
+  {
+    "id": "9",
+    "nama": "Wumbowi",
+    "nim": "12250111791",
+    "judul": "Analisis Dampak Pengaruh Penggunaan Algoritma yang Tidak Digunakan",
+    "pada": "13.00-15.00/FST.303",
+    "hari": "Kamis, 30 Desember 2026",
+    "pembimbing1": "Bu Fulanah",
+    "pembimbing2": "Pak Fulan"
+  }
+]
