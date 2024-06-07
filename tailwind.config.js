@@ -10,7 +10,6 @@ export default {
         customBlack: "#212529",
         customGreen: "#00BD13",
         customRed: "#BD0000",
-        bgWhite: "#f1faee",
       },
 
       fontFamily: {

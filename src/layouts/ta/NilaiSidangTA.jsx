@@ -1,5 +1,5 @@
 import React from "react";
-import Kriteria from "../components/Kriteria";
+import Kriteria from "../../components/Kriteria";
 
 const NilaiSidangTA = () => {
   const kriteria = [

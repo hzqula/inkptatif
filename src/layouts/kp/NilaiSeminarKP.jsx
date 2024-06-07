@@ -1,11 +1,13 @@
 import React from "react";
-import Kriteria from "../components/Kriteria";
+import Kriteria from "../../components/Kriteria";
 
-const NilaiBimbinganTA = () => {
+const NilaiSeminarKP = () => {
   const kriteria = [
-    { content: "Sikap (20%)" },
-    { content: "Penguasaan Materi (40%)" },
-    { content: "Isi Laporan (40%)" },
+    { content: "Motivasi dan semangat" },
+    { content: "Keuletan dalam penelitian" },
+    { content: "Kreativitas" },
+    { content: "Ketepatan waktu penelitian sesuai jadwal" },
+    { content: "Tanggung jawab" },
   ];
 
   return (
@@ -27,4 +29,4 @@ const NilaiBimbinganTA = () => {
   );
 };
 
-export default NilaiBimbinganTA;
+export default NilaiSeminarKP;

@@ -4,16 +4,16 @@ import Dashboard from "./pages/Dashboard";
 import InputNilaiKP from "./pages/InputNilaiKP";
 import InputNilaiTA from "./pages/InputNilaiTA";
 import Login from "./pages/Login";
-import ContentDetailKP from "./layouts/ContentDetailKP";
+import ContentDetailKP from "./layouts/kp/ContentDetailKP";
 
 const App = () => {
   return (
     <Routes>
-      <Route index element={<Login />} />
-      <Route path="/input-nilai-kp" element={<InputNilaiKP />} />
-      <Route path="/input-nilai-ta" element={<InputNilaiTA />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/detail-input-kp" element={<ContentDetailKP />} />
+      <Route path="inkptatif" element={<Login />} />
+      <Route path="inkptatif/input-nilai-kp" element={<InputNilaiKP />} />
+      <Route path="inkptatif/input-nilai-ta" element={<InputNilaiTA />} />
+      <Route path="inkptatif/dashboard/" element={<Dashboard />} />
+      <Route path="inkptatif/detail-input-kp" element={<ContentDetailKP />} />
     </Routes>
   );
 };

@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Navbar from "../layouts/Navbar";
-import Footer from "../layouts/Footer";
 import Hero from "../layouts/Hero";
 import HistoryKP from "../layouts/HistoryKP";
 import HistoryTA from "../layouts/HistoryTA";
+import Footer from "../layouts/Footer";
 
 const Dashboard = () => {
+  const [userInfo, setUserInfo] = useState(null);
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost/inkptatif_v2/index.php?app=dosen&action=get",
+          {
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+          }
+        );
+
+        setUserInfo(response.data);
+      } catch (error) {
+        console.error("Failed to fetch user info:", error);
+        // Lakukan penanganan error lain di sini
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
+
   return (
     <>
       <Navbar />
-      <Hero />
-      <HistoryKP />
-      <HistoryTA />
+      <Hero userInfo={userInfo} />
+      <HistoryKP userInfo={userInfo} />
+      <HistoryTA userInfo={userInfo} />
       <Footer />
     </>
   );

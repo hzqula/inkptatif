@@ -9,9 +9,9 @@ const Navbar = () => {
       <Logo />
       <nav>
         <div className="flex gap-x-8">
-          <Item content="Dashboard" path="/dashboard" />
-          <Item content="Input Nilai KP" path="/input-nilai-kp" />
-          <Item content="Input Nilai TA" path="/input-nilai-ta" />
+          <Item content="Dashboard" path="/inkptatif/dashboard/" />
+          <Item content="Input Nilai KP" path="/inkptatif/input-nilai-kp" />
+          <Item content="Input Nilai TA" path="/inkptatif/input-nilai-ta" />
         </div>
       </nav>
       <Btn />

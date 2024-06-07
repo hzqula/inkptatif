@@ -1,7 +1,7 @@
 import React from "react";
 import heroImg from "../assets/hero-img.png";
 
-const Hero = () => {
+const Hero = ({ userInfo }) => {
   return (
     <section className="pt-[10rem]">
       <div className="flex items-center justify-between w-4/5 m-auto">
@@ -10,7 +10,7 @@ const Hero = () => {
             Assalamu'alaikum,
           </h1>
           <h2 className="text-secondary text-[56px] font-bold leading-tight mb-2">
-            Bu Fulanah
+            {userInfo ? userInfo.nama : "Loading..."}
           </h2>
           <p className="font-medium text-[16px] text-primary font-primary">
             InKPTA<span className="text-secondary">TIF</span> adalah tempat

@@ -1,18 +1,48 @@
 import React, { useState } from "react";
 import heroImg from "../assets/hero-img.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useUser } from "../context/UserContext";
 
 const Login = () => {
+  const { setUser } = useUser();
   const [nip, setNip] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Lakukan proses autentikasi dengan NIP dan password
-    console.log("NIP:", nip);
-    console.log("Password:", password);
-    console.log("Remember Me:", rememberMe);
+
+    try {
+      const response = await axios.post(
+        "http://localhost/inkptatif_v2/index.php?app=dosen&action=login",
+        { nip, password },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      );
+
+      const { token, user } = response.data; // Asumsikan response.data mengandung user
+
+      if (token) {
+        // Simpan token di localStorage atau tempat lain yang aman
+        localStorage.setItem("token", token);
+
+        // Simpan data pengguna ke context
+        setUser(user);
+
+        // Navigasi ke halaman lain setelah login berhasil
+        navigate("/inkptatif/dashboard/");
+      } else {
+        console.error("Login failed: No token received");
+      }
+    } catch (error) {
+      console.error("Login failed:", error.response?.data?.message);
+    }
   };
 
   return (
@@ -80,14 +110,12 @@ const Login = () => {
               </a>
             </div>
 
-            <Link to={`/dashboard`}>
-              <button
-                type="submit"
-                className="w-full px-4 py-2 text-white transition-colors duration-300 rounded-md bg-primary bg-navy-900 hover:bg-navy-700"
-              >
-                Login
-              </button>
-            </Link>
+            <button
+              type="submit"
+              className="w-full px-4 py-2 text-white transition-colors duration-300 rounded-md bg-primary bg-navy-900 hover:bg-navy-700"
+            >
+              Login
+            </button>
           </form>
         </div>
         <div className="w-[60%] flex items-center">
