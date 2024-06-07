@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost/inkptatif_v2/index.php?app=dosen&action=login",
+        "https://inkptatif-api.000webhostapp.com/index.php?app=dosen&action=login",
         { nip, password },
         {
           headers: {

@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchUserInfo = async () => {
       try {
         const response = await axios.get(
-          "http://localhost/inkptatif_v2/index.php?app=dosen&action=get",
+          "https://inkptatif-api.000webhostapp.com/index.php?app=dosen&action=get",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

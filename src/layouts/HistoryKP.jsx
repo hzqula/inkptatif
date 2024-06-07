@@ -10,7 +10,7 @@ const HistoryKP = ({ userInfo }) => {
       const fetchData = async () => {
         try {
           const response = await axios.get(
-            `http://localhost/inkptatif_v2/dosen/dosen.php?nip=${userInfo.nip}`,
+            `https://inkptatif-api.000webhostapp.com/dosen/dosen.php?nip=${userInfo.nip}`,
             {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -28,7 +28,7 @@ const HistoryKP = ({ userInfo }) => {
           for (let index = 0; index < data.length; index++) {
             if (data[index].kategori === "kp") {
               const seminarResponse = await axios.get(
-                `http://localhost/inkptatif_v2/seminar/seminar.php?nim=${data[index].nim}`,
+                `https://inkptatif-api.000webhostapp.com/seminar/seminar.php?nim=${data[index].nim}`,
                 {
                   headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
