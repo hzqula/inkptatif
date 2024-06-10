@@ -10,7 +10,7 @@ const ContentDetailTA = ({ onClose, data, ket, userInfo }) => {
     const fetchSeminar = async () => {
       try {
         const response = await fetch(
-          `https://inkptatif-api.000webhostapp.com/seminar/seminar.php?nama=${encodeURIComponent(
+          `https://inkptatif.000webhostapp.com/seminar/seminar.php?nama=${encodeURIComponent(
             data.nama
           )}`
         );

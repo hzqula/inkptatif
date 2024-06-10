@@ -10,7 +10,7 @@ const NilaiBimbinganTA = ({ ket, kat, nim, nip }) => {
     const fetchKriteria = async () => {
       try {
         const response = await axios.get(
-          `https://inkptatif-api.000webhostapp.com/input-nilai/kriteria.php?jenis_kategori=${kat}&jenis_keterangan=${ket}`
+          `https://inkptatif.000webhostapp.com/input-nilai/kriteria.php?jenis_kategori=${kat}&jenis_keterangan=${ket}`
         );
         setPenilaian(response.data);
         setNilai(Array(response.data.length).fill(0)); // Inisialisasi nilai dengan panjang data
@@ -33,7 +33,7 @@ const NilaiBimbinganTA = ({ ket, kat, nim, nip }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://inkptatif-api.000webhostapp.com/input-nilai/input-nilai.php",
+        "https://inkptatif.000webhostapp.com/input-nilai/input-nilai.php",
         {
           id_kriteria: penilaian.map((p) => p.id), // Mengirim array ID kriteria
           nilai: nilai, // Mengirim array nilai

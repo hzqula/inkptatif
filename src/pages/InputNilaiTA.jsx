@@ -11,7 +11,7 @@ const InputNilaiTA = () => {
     const fetchUserInfo = async () => {
       try {
         const response = await axios.get(
-          "https://inkptatif-api.000webhostapp.com/index.php?app=dosen&action=get",
+          "https://inkptatif.000webhostapp.com/index.php?app=dosen&action=get",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
