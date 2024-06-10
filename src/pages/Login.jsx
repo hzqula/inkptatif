@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://inkptatif-api.000webhostapp.com/index.php?app=dosen&action=login",
+        "https://inkptatif.000webhostapp.com/index.php?app=dosen&action=login",
         { nip, password },
         {
           headers: {
@@ -44,6 +44,9 @@ const Login = () => {
       console.error("Login failed:", error.response?.data?.message);
     }
   };
+
+  console.log(nip);
+  console.log(password);
 
   return (
     <div className="flex items-center justify-center w-full h-screen bg-primary">
