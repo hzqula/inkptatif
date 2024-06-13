@@ -36,7 +36,7 @@ const Login = () => {
         setUser(user);
 
         // Navigasi ke halaman lain setelah login berhasil
-        navigate("/inkptatif/dashboard/");
+        navigate("/dashboard/");
       } else {
         console.error("Login failed: No token received");
       }
