@@ -10,7 +10,7 @@ const ContentDetailKP = ({ onClose, data, ket, userInfo }) => {
     const fetchSeminar = async () => {
       try {
         const response = await fetch(
-          `https://moccasin-goldfish-868827.hostingersite.com/seminar/seminar.php?nama=${encodeURIComponent(
+          `https://ghostwhite-hummingbird-779835.hostingersite.com/seminar/seminar.php?nama=${encodeURIComponent(
             data.nama
           )}`
         );

@@ -10,7 +10,7 @@ const HistoryTA = ({ userInfo }) => {
       const fetchData = async () => {
         try {
           const response = await axios.get(
-            `https://moccasin-goldfish-868827.hostingersite.com/dosen/dosen.php?nip=${userInfo.nip}`,
+            `https://ghostwhite-hummingbird-779835.hostingersite.com/dosen/dosen.php?nip=${userInfo.nip}`,
             {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -27,7 +27,7 @@ const HistoryTA = ({ userInfo }) => {
           for (let index = 0; index < data.length; index++) {
             if (data[index].kategori === "ta") {
               const seminarResponse = await axios.get(
-                `https://moccasin-goldfish-868827.hostingersite.com/seminar/seminar.php?nim=${data[index].nim}`,
+                `https://ghostwhite-hummingbird-779835.hostingersite.com/seminar/seminar.php?nim=${data[index].nim}`,
                 {
                   headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,

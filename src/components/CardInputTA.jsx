@@ -13,7 +13,7 @@ const CardInputTA = ({ status = "sudah", nilai, userInfo, ket }) => {
       const fetchData = async () => {
         try {
           const response = await axios.get(
-            `https://moccasin-goldfish-868827.hostingersite.com/dosen/dosen.php?nip=${userInfo.nip}`
+            `https://ghostwhite-hummingbird-779835.hostingersite.com/dosen/dosen.php?nip=${userInfo.nip}`
           );
           let ta = [];
           if (response.data.length > 0) {
