@@ -10,7 +10,7 @@ const NilaiBimbinganKP = ({ ket, kat, nim, nip }) => {
     const fetchKriteria = async () => {
       try {
         const response = await axios.get(
-          `https://ghostwhite-hummingbird-779835.hostingersite.com/input-nilai/kriteria.php?jenis_kategori=${kat}&jenis_keterangan=${ket}`
+          `https://inkptatif.xyz/input-nilai/kriteria.php?jenis_kategori=${kat}&jenis_keterangan=${ket}`
         );
         setPenilaian(response.data);
         setNilai(Array(response.data.length).fill(0)); // Inisialisasi nilai dengan panjang data
@@ -33,7 +33,7 @@ const NilaiBimbinganKP = ({ ket, kat, nim, nip }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://ghostwhite-hummingbird-779835.hostingersite.com/input-nilai/input-nilai.php",
+        "https://inkptatif.xyz/input-nilai/input-nilai.php",
         {
           id_kriteria: penilaian.map((p) => p.id), // Mengirim array ID kriteria
           nilai: nilai, // Mengirim array nilai

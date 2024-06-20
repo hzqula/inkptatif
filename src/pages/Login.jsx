@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://ghostwhite-hummingbird-779835.hostingersite.com/login.php?app=dosen&action=login", // Use the /api prefix
+        "https://inkptatif.xyz/login.php?app=dosen&action=login", // Use the /api prefix
         { nip, password },
         {
           headers: {

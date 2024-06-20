@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchUserInfo = async () => {
       try {
         const response = await axios.get(
-          "https://ghostwhite-hummingbird-779835.hostingersite.com/login.php?app=dosen&action=get",
+          "https://inkptatif.xyz/login.php?app=dosen&action=get",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
