@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchUserInfo = async () => {
       try {
         const response = await axios.get(
-          "https://inkptatif.000webhostapp.com/login.php?app=dosen&action=get",
+          "https://moccasin-goldfish-868827.hostingersite.com/login.php?app=dosen&action=get",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -21,6 +21,9 @@ const Dashboard = () => {
           }
         );
 
+        console.log(localStorage.getItem("token"));
+        console.log("test");
+        console.log(response.data);
         setUserInfo(response.data);
       } catch (error) {
         console.error("Failed to fetch user info:", error);

@@ -10,7 +10,7 @@ const NilaiBimbinganKP = ({ ket, kat, nim, nip }) => {
     const fetchKriteria = async () => {
       try {
         const response = await axios.get(
-          `https://inkptatif.000webhostapp.com/input-nilai/kriteria.php?jenis_kategori=${kat}&jenis_keterangan=${ket}`
+          `https://moccasin-goldfish-868827.hostingersite.com/input-nilai/kriteria.php?jenis_kategori=${kat}&jenis_keterangan=${ket}`
         );
         setPenilaian(response.data);
         setNilai(Array(response.data.length).fill(0)); // Inisialisasi nilai dengan panjang data

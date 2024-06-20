@@ -10,7 +10,7 @@ const ContentDetailTA = ({ onClose, data, ket, userInfo }) => {
     const fetchSeminar = async () => {
       try {
         const response = await fetch(
-          `https://inkptatif.000webhostapp.com/seminar/seminar.php?nama=${encodeURIComponent(
+          `https://moccasin-goldfish-868827.hostingersite.com/seminar/seminar.php?nama=${encodeURIComponent(
             data.nama
           )}`
         );

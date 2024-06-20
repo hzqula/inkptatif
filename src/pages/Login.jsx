@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://inkptatif.000webhostapp.com/login.php?app=dosen&action=login",
+        "https://moccasin-goldfish-868827.hostingersite.com/login.php?app=dosen&action=login", // Use the /api prefix
         { nip, password },
         {
           headers: {
@@ -26,16 +26,16 @@ const Login = () => {
         }
       );
 
-      const { token, user } = response.data; // Asumsikan response.data mengandung user
+      const { token, user } = response.data; // Assume response.data contains user
 
       if (token) {
-        // Simpan token di localStorage atau tempat lain yang aman
+        // Save token in localStorage or another secure place
         localStorage.setItem("token", token);
 
-        // Simpan data pengguna ke context
+        // Save user data in context
         setUser(user);
-
-        // Navigasi ke halaman lain setelah login berhasil
+        console.log("Token: " + token);
+        // Navigate to another page after successful login
         navigate("/dashboard/");
       } else {
         console.error("Login failed: No token received");
@@ -44,6 +44,9 @@ const Login = () => {
       console.error("Login failed:", error.response?.data?.message);
     }
   };
+
+  console.log(nip);
+  console.log(password);
 
   return (
     <div className="flex items-center justify-center w-full h-screen bg-primary">

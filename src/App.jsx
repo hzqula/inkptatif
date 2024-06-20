@@ -9,13 +9,12 @@ import ContentDetailKP from "./layouts/kp/ContentDetailKP";
 const App = () => {
   return (
     <Routes>
-      <Route path="inkptatif" element={<Login />} />
-      <Route path="inkptatif/input-nilai-kp" element={<InputNilaiKP />} />
-      <Route path="inkptatif/input-nilai-ta" element={<InputNilaiTA />} />
-      <Route path="inkptatif/dashboard/" element={<Dashboard />} />
-      <Route path="inkptatif/detail-input-kp" element={<ContentDetailKP />} />
+      <Route path="/" element={<Login />} />
+      <Route path="input-nilai-kp" element={<InputNilaiKP />} />
+      <Route path="input-nilai-ta" element={<InputNilaiTA />} />
+      <Route path="dashboard/" element={<Dashboard />} />
+      <Route path="detail-input-kp" element={<ContentDetailKP />} />
     </Routes>
   );
 };
-
 export default App;
