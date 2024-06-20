@@ -13,7 +13,7 @@ const CardInputKP = ({ status = "sudah", nilai, userInfo, ket }) => {
       const fetchData = async () => {
         try {
           const response = await axios.get(
-            `https://inkptatif.000webhostapp.com/dosen/dosen.php?nip=${userInfo.nip}`
+            `https://moccasin-goldfish-868827.hostingersite.com/dosen/dosen.php?nip=${userInfo.nip}`
           );
           let kp = [];
           if (response.data.length > 0) {

@@ -33,7 +33,7 @@ const NilaiBimbinganKP = ({ ket, kat, nim, nip }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://inkptatif.000webhostapp.com/input-nilai/input-nilai.php",
+        "https://moccasin-goldfish-868827.hostingersite.com/input-nilai/input-nilai.php",
         {
           id_kriteria: penilaian.map((p) => p.id), // Mengirim array ID kriteria
           nilai: nilai, // Mengirim array nilai
