@@ -31,6 +31,8 @@ const Dashboard = () => {
       }
     };
 
+    console.log(userInfo);
+
     fetchUserInfo();
   }, []);
 

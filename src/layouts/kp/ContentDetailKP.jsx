@@ -6,6 +6,8 @@ import NilaiBimbinganKP from "./NilaiBimbinganKP";
 const ContentDetailKP = ({ onClose, data, ket, userInfo }) => {
   const [seminarData, setSeminarData] = useState(null);
 
+  console.log(seminarData.nim);
+
   useEffect(() => {
     const fetchSeminar = async () => {
       try {
@@ -14,7 +16,7 @@ const ContentDetailKP = ({ onClose, data, ket, userInfo }) => {
             data.nama
           )}`
         );
-        const seminarData = await response.json();
+        const seminarData = await respons.json();
         setSeminarData(seminarData[0]); // Asumsikan data adalah array dan kita hanya butuh item pertama
       } catch (error) {
         console.error("Error fetching seminar data:", error);

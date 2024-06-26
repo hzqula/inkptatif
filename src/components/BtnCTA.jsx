@@ -9,7 +9,6 @@ const BtnCTA = () => {
       >
         Keluar
       </a>
-      ;
     </div>
   );
 };
